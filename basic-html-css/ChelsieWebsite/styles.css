@@ -1,0 +1,369 @@
+:root{
+--text-color: #1a1c20;
+--link-color: #4a76ee;
+--background-color: #eeeff1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+}
+
+main{
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+a{
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+/* NAVBAR */
+nav {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:transparent; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    z-index: 1000; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+nav .left a{
+    color: var(--text-color);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+nav .right a{
+    color: var(--text-color);
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+nav .right a:last-child {
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+nav .right a span{
+    margin-left: 5px;
+}
+
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0 100px;
+    margin: 30px 0;
+    gap: 100px;
+    margin-bottom: 30px;
+}
+
+.hero-section .text{
+    flex: 5;
+}
+
+.hero-section .text h2{
+    font-size: 45px;
+}
+
+
+.links{
+margin-top: 25px;
+display: inline-block;
+}
+
+.links a{
+font-size: 20px;
+display: inline-block;
+border: 2px solid var(--link-color);
+padding: 5px 10px;
+border-radius: 5px;
+margin-right: 10px;
+margin-bottom: 10px;
+transition: 500ms;
+}
+
+.selfpic{
+    flex: 2;
+    margin-right: 50x;
+}
+.selfpic img{
+    border-radius: 50%;
+    width: 400px;
+    border: 6px solid var(--link-color); 
+    box-shadow: 0 4px 10px rgba(74, 118, 238, 0.3); 
+    outline: 2px solid rgba(74, 118, 238, 0.5); 
+}
+
+.links a:hover{
+    color: var(--text-color);
+    border: 2px --text-color;
+}   
+
+/* SECTION 2: SKILLS SECTION */
+
+.skills-section{
+    padding: 0;
+    margin-bottom: 25px;
+    }
+    
+.skills-section h2{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 10px;
+}    
+    
+.skills-section .text{
+    text-align: center;
+    margin-bottom: 20px;
+}    
+.skills-section .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.skills-section .cell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.skills-section .cell:hover {
+    background:var(--link-color); 
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.skills-section .cell img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+
+.skills-section .cell span {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--text-color);
+    transition: color 0.3s ease-in-out;
+}
+
+.skills-section .cell:hover span {
+    color:darkblue; /* Soft blue text on hover */
+}
+
+/* SECTION 3: PROJECTS SECTION */
+.project {
+    align-items: center;
+}
+
+.project .subtitles{
+    font-size: 35px;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 355px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2 );
+    margin: 100px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+}
+
+.card-content{
+    padding: 16px;
+}
+
+
+.card-content h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.card-content p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+.card:hover{
+    color: var(--link-color);
+    border: 2px solid var(--link-color);
+    transform: scale(1.05); /* Slight zoom-in effect */
+    box-shadow: 0px 4px 8px var(--link-color);
+}
+
+.card a{
+    color: var(--text-color);
+}
+
+/* SECTION 4: HOBBIES */
+.subtitles{
+    font-size: 35px;
+    padding: 0 100px;
+}
+
+.hobbies .card {
+    width: 355px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2 );
+    margin: 50px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    margin-bottom: 150px;
+}
+
+/* SECTION 5: SOCIALS */
+.social {
+    margin-top: 20px;
+    padding-top: 20px;
+    color: var(--background-color);
+    background-color: var(--text-color);
+    width: 100%;
+    height : 250px;
+    font-size: 18px;
+}
+
+.social .left{
+    text-align: center;
+    justify-content: space-evenly;
+    padding: 20px;
+  
+}
+
+.social .right{
+    text-align: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.social .left a{
+padding: 40px;
+}
+
+.social .right a{
+    padding: 50px;
+    }
+
+.section span{
+    margin-left: 15px;
+}
+
+
+
+
+@media(max-width : 850px)  {
+    /* SECTION 1: HERO SECTION */
+    .hero-section .text h2{
+        font-size: 35px;
+    }
+}
+@media(max-width : 740px)  {
+    /* SECTION 1: HERO SECTION */
+    .hero-section {
+        flex-direction: column-reverse;
+        margin-left: 0px;
+    }
+    .selfpic img{
+        width: 250px;
+    }
+
+    .hero-section .text{
+       font-size: 18px;
+    }
+}
+
+@media(max-width : 600px){
+/* NAVBAR */
+nav{
+    padding: 0 20px;   
+}
+
+nav .right a {
+    font-size: 22px;
+}
+
+nav .right a:last-child {
+    color: var(--text-color);
+    background-color: transparent;
+    padding: 0;
+}   
+
+
+nav .right a  span{
+    display: none;
+}
+
+/* SECTION 1: HERO SECTION */
+.hero-section{
+    padding: 0 20px;
+}
+
+.hero-section .text h2{
+ font-size: 30px;
+}
+
+.hero-section .text p{
+    font-size: 12px;
+   }
+   
+ .links a{
+    font-size: 14px;
+    padding: 0px 10px;
+   }
+
+/* SECTION 2: SKILLS SECTION */
+
+.skills-section .text p{
+    font-size: 12px;
+    
+}
+
+.skills-section .cells .cell{
+    font-size: 16;
+    padding : 5px 10px; 
+    width: 100px;
+}
+}
